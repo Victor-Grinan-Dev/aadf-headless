@@ -20,6 +20,18 @@ export const appSlice = createSlice({
 
   reducers: {
     //general
+    setIsLoading(state, action) {
+      state.isLoading = action.payload;
+    },
+    setSearch(state, action) {
+      state.search = action.payload;
+    },
+    setError(state, action) {
+      state.error = action.payload;
+    },
+    setMessage(state, action) {
+      state.message = action.payload;
+    },
     //MODALS:
     //Auth
     //content
@@ -29,6 +41,10 @@ export const appSlice = createSlice({
 
 export const {
   //general
+  setIsLoading,
+  setSearch,
+  setError,
+  setMessage,
   //modals
   //Auth
   //content
