@@ -4,6 +4,9 @@ This project is a CRUD that allows AADF users to participate in the forum.
 No-Copy License.
 
 - Live site: 
+    - live site: ...not yet created.
+    - production site: https://soft-cuchufli-c27e01.netlify.app/
+    - testing site: https://vocal-platypus-0c1381.netlify.app/
 
 ## Table of Contents
 - Dependencies
