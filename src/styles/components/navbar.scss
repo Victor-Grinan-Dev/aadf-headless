@@ -2,18 +2,27 @@
 
 .navbar {
     width: 100vw;
-    background-color: $primary-green;
+    background-color: $dark-grey2;
     color: $app-white;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    gap: 20px;
 
     &_logo-container {
         display: flex;
         align-items: center;
         gap: 20px;
+
+        &-img{
+            width: 40px;
+            height: 40px;
+            background-image: url('../../assets/logo4.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
     &_title {
@@ -22,22 +31,90 @@
         text-transform: uppercase;
     }
 
+    @media only screen and (max-width: $size-phone) {
+        //hide title for phone size
+        &_title {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: $size-pc) {
+        //reduce font size for less than pc
+        &_title {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    &_nav-container {
+        display: flex;
+        flex: 1;
+
+        justify-content: flex-start;
+        gap: 5px;
+
+        &-item {
+            padding: 2px 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        &-item:focus {
+            background-color: $primary-green;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+    }
+
+    @media only screen and (max-width: $size-tablet) {
+        /*switch to hamburger for less than tablet size*/
+        &_nav-container {
+            display: none;
+        }
+    }
+
+    &_tools {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        min-width: 150px;
+    }
+
+    &_tools-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &-search{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
     &_menu-container {
-        width: 50px;
+        width: 35px;
         height: 30px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         gap: 3px;
         cursor: pointer;
+
+        &-menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
-    &_hamburger {
-        height: 10px;
-        background-color: $app-white;
-        border-radius: 10px;
-        width: 100%;
+    @media only screen and (min-width: $size-tablet) {
+        /* hide hamburger for more than tablet size*/
+        &_menu-container {
+            display: none;
+        }
     }
-
 }
