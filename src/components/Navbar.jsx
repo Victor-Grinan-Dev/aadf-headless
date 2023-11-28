@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/logo4.png";
 
 import NavBtn from "./reusables/NavBtn";
 

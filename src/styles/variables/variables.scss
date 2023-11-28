@@ -1,9 +1,10 @@
   
-    
+    /* AADF colors */
     $primary-green: #63c810;
     $secundary-green: #459504;
     $pale_green: #BAE598;
 
+    /* gray scale */
     $app-white:white;
     $light-gray1:#d3d3d3;
     $light-gray2:#bebebf;
@@ -12,6 +13,7 @@
     $dark-grey2:#222222;
     $app-black:#111111;
 
+    /* BP colors */
     $fun-green:#21c015;
     $fun-light-blue1:#00c0dd;
     $fun-light-blue2:#009cd0;
@@ -21,3 +23,8 @@
     $fun-dark-red:#b30d44;
     $fun-light-red:#e30000;
     $fun-orange:#f55300;
+
+    /* screen sizes */
+    $size-pc:1300px; //or more
+    $size-tablet:1100px; //or less
+    $size-phone:550px; //or less
