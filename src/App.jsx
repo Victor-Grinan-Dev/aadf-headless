@@ -1,18 +1,30 @@
-import Navbar from "./components/layout/Navbar";
-import Banner from "./components/Banner";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+
 import Content from "./components/Content";
-import Footer from "./components/layout/Footer";
 
 function App() {
   console.log(process.env.REACT_APP_DISCOURSE_API_KEY); //not working!
 
+  // return (
+  //   <div className="App">
+  //     <Navbar />
+  //     <Banner />
+  //     <Content />
+  //     <Footer />
+  //   </div>
+  // );
+
   return (
-    <div className="App">
-      <Navbar />
-      <Banner />
-      <Content />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          {/* all routes */}
+          <Route index element={<Content />} />
+        </Route>
+        ;
+      </Routes>
+    </BrowserRouter>
   );
 }
 
