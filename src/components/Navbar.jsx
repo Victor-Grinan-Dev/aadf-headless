@@ -28,9 +28,9 @@ const Navbar = () => {
           <button className="loginBtn">signup</button>
         </div>
         <div className="navbar_menu-container">
-          <div className="navbar_hamburger navbar_hamburger-top"></div>
-          <div className="navbar_hamburger navbar_hamburger-mid"></div>
-          <div className="navbar_hamburger navbar_hamburger-bot"></div>
+          <div className="navbar_menu-container-menu">
+            <span class="material-symbols-outlined">menu</span>
+          </div>
         </div>
       </div>
     </div>
