@@ -12,12 +12,6 @@ const Navbar = () => {
         <div className="navbar_title">all About dog food</div>
       </div>
       <div className="navbar_nav-container">
-        {/* <div className="navbar_nav-container-item">trading</div>
-        <div className="navbar_nav-container-item">forex</div>
-        <div className="navbar_nav-container-item">cryto</div>
-        <div className="navbar_nav-container-item">forum</div>
-        <div className="navbar_nav-container-item">calendar</div>
-        <div className="navbar_nav-container-item">tools</div> */}
         <NavBtn name="trading" />
         <NavBtn name="forex" />
         <NavBtn name="cryto" />
@@ -28,8 +22,10 @@ const Navbar = () => {
 
       <div className="navbar_tools">
         <div className="navbar_tools-container">
-          <div>search</div>
-          <div>login</div>
+          <div className="navbar_tools-container-search">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+          <button className="loginBtn">signup</button>
         </div>
         <div className="navbar_menu-container">
           <div className="navbar_hamburger navbar_hamburger-top"></div>

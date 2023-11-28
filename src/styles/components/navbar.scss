@@ -82,11 +82,18 @@
 
     &_tools-container {
         display: flex;
+        align-items: center;
         gap: 5px;
+        
+        &-search{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &_menu-container {
-        width: 40px;
+        width: 35px;
         height: 30px;
         display: flex;
         flex-direction: column;
@@ -97,7 +104,7 @@
     }
 
     &_hamburger {
-        height: 10px;
+        height: 5px;
         background-color: $app-white;
         border-radius: 10px;
         width: 100%;
