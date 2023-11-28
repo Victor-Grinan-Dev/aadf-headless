@@ -1,0 +1,40 @@
+
+
+.forum-content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1480px;
+    
+    margin: auto;
+    padding: 0 10px;
+
+    &_filterBar{
+        background-color: $app-white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 98%;
+        height: 120px;
+    }
+    &_conversations{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        max-width: 98%;
+
+        &--topics{
+            flex:1;
+            max-width: 65%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            height: 120px;
+        }
+
+        &--latest{
+            width: 32%;
+            background-color: cornflowerblue;
+        }
+    }
+}

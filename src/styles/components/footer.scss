@@ -1,0 +1,10 @@
+.footer{
+    background-color: $dark-grey2;
+    color: $app-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100px;
+    padding: 10px 0;
+}

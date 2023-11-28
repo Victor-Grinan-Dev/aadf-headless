@@ -1,0 +1,20 @@
+@import "../../variables/variables.scss";
+.card{
+    border-radius: 5px;
+}
+
+.clipped-card{
+    background-color: white;
+   
+    // min-width: 280px;
+    // max-width: 750px;
+
+    display: flex;
+    align-items: center;
+
+
+    &_clip{
+        background-color: aquamarine;
+    }
+    
+}

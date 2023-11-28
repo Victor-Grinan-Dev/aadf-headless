@@ -1,6 +1,6 @@
 import React from "react";
 
-import NavBtn from "./reusables/NavBtn";
+import NavBtn from "../reusables/NavBtn";
 
 const Navbar = () => {
   return (

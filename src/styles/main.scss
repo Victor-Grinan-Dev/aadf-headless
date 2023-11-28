@@ -3,6 +3,15 @@
 @import "./components/reusables/navBtn.scss";
 @import "./components/reusables/loginBtn.scss";
 
+/** Forum content **/
+@import "./components/forumContent.scss";
+@import "./components/filterBar.scss";
+@import "./components/reusables/clippedCard.scss";
+//card
+
+
+@import "./components/footer.scss";
+
 * {
   margin: 0;
   padding: 0;
